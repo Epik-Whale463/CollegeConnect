@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Connect - Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; }
+        .loading { opacity: 0.5; pointer-events: none; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-8">
+        <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-blue-500"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div class="bg-gray-800 p-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Total Colleges</h3>
+                <p id="totalColleges" class="text-3xl font-bold text-blue-400">0</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Approved</h3>
+                <p id="approvedColleges" class="text-3xl font-bold text-green-400">0</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Pending</h3>
+                <p id="pendingColleges" class="text-3xl font-bold text-yellow-400">0</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Rejected</h3>
+                <p id="rejectedColleges" class="text-3xl font-bold text-red-400">0</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold">College Registrations</h2>
+                <button id="exportBtn" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+                    Export CSV
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <table id="collegeTable" class="w-full">
+                    <thead>
+                        <tr class="border-b border-gray-700">
+                            <th class="py-2 text-left">College Name</th>
+                            <th class="py-2 text-left">Website</th>
+                            <th class="py-2 text-left">Status</th>
+                            <th class="py-2 text-left">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="collegeTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Debounce function to limit rapid API calls
+        function debounce(func, delay) {
+            let timeoutId;
+            return function (...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => func.apply(this, args), delay);
+            };
+        }
+
+        // Global state to cache data
+        const state = {
+            colleges: [],
+            stats: {}
+        };
+
+        // Show loading overlay
+        function showLoading() {
+            document.getElementById('loadingOverlay').classList.remove('hidden');
+        }
+
+        // Hide loading overlay
+        function hideLoading() {
+            document.getElementById('loadingOverlay').classList.add('hidden');
+        }
+
+        // Fetch dashboard statistics with caching
+        async function fetchDashboardStats() {
+            try {
+                showLoading();
+                const response = await fetch('/admin/dashboard/stats');
+                const stats = await response.json();
+                state.stats = stats;
+
+                // Update stats immediately
+                document.getElementById('totalColleges').textContent = stats.total_colleges;
+                document.getElementById('approvedColleges').textContent = stats.approved_colleges;
+                document.getElementById('pendingColleges').textContent = stats.pending_colleges;
+                document.getElementById('rejectedColleges').textContent = stats.rejected_colleges;
+            } catch (error) {
+                console.error('Stats fetch error:', error);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Fetch and render college list with performance optimizations
+        async function fetchCollegeList() {
+            try {
+                showLoading();
+                const response = await fetch('/api/college/list');
+                const colleges = await response.json();
+                state.colleges = colleges;
+
+                const tableBody = document.getElementById('collegeTableBody');
+                tableBody.innerHTML = ''; // Clear existing rows
+
+                colleges.forEach(college => {
+                    const row = document.createElement('tr');
+                    row.classList.add('border-b', 'border-gray-700');
+                    
+                    const status = college.adminApproved ? 'Approved' : 
+                                   college.rejected ? 'Rejected' : 'Pending';
+                    const statusColor = college.adminApproved ? 'text-green-400' : 
+                                        college.rejected ? 'text-red-400' : 'text-yellow-400';
+
+                    row.innerHTML = `
+                        <td class="py-2">${college.collegeName}</td>
+                        <td class="py-2">${college.website}</td>
+                        <td class="py-2 ${statusColor}">${status}</td>
+                        <td class="py-2">
+                            <button onclick="handleCollegeAction('approve', '${college._id}')" 
+                                    class="text-green-400 mr-2 ${college.adminApproved ? 'hidden' : ''}">
+                                Approve
+                            </button>
+                            <button onclick="handleCollegeAction('reject', '${college._id}')" 
+                                    class="text-red-400 ${college.rejected ? 'hidden' : ''}">
+                                Reject
+                            </button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Colleges fetch error:', error);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Consolidated action handler with debounce
+        const handleCollegeAction = debounce(async (action, collegeId) => {
+            try {
+                showLoading();
+                const endpoint = action === 'approve' 
+                    ? `/api/college/approve/${collegeId}` 
+                    : `/api/college/reject/${collegeId}`;
+
+                const response = await fetch(endpoint, { method: 'PUT' });
+                if (response.ok) {
+                    // Parallel updates for better performance
+                    await Promise.all([
+                        fetchDashboardStats(),
+                        fetchCollegeList()
+                    ]);
+                }
+            } catch (error) {
+                console.error(`${action} action error:`, error);
+            } finally {
+                hideLoading();
+            }
+        }, 300);
+
+        // Export CSV with loading state
+        document.getElementById('exportBtn').addEventListener('click', async () => {
+            try {
+                showLoading();
+                const response = await fetch('/admin/export/colleges');
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'colleges_report.csv';
+                a.click();
+            } catch (error) {
+                console.error('CSV export error:', error);
+            } finally {
+                hideLoading();
+            }
+        });
+
+        // Initialize dashboard with parallel loading
+        async function initDashboard() {
+            await Promise.all([
+                fetchDashboardStats(),
+                fetchCollegeList()
+            ]);
+        }
+
+        // Periodic auto-refresh (every 2 minutes)
+        setInterval(initDashboard, 120000);
+
+        // Load dashboard on page load
+        document.addEventListener('DOMContentLoaded', initDashboard);
+    </script>
+</body>
+</html>

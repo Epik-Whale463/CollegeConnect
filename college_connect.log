@@ -1,0 +1,25 @@
+2025-02-04 19:58:52,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 19:58:52,609 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 19:58:52,609 - INFO -  * Restarting with stat
+2025-02-04 19:58:52,922 - WARNING -  * Debugger is active!
+2025-02-04 19:58:52,923 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 19:58:53,911 - INFO - 127.0.0.1 - - [04/Feb/2025 19:58:53] "GET / HTTP/1.1" 200 -
+2025-02-04 19:58:58,528 - INFO - 127.0.0.1 - - [04/Feb/2025 19:58:58] "GET / HTTP/1.1" 200 -
+2025-02-04 19:59:07,955 - INFO - 127.0.0.1 - - [04/Feb/2025 19:59:07] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 19:59:08,046 - INFO - 127.0.0.1 - - [04/Feb/2025 19:59:08] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 19:59:37,056 - INFO - New College Registered: Vasireddy Venkatadri Institute of Technology
+2025-02-04 19:59:37,057 - INFO - 127.0.0.1 - - [04/Feb/2025 19:59:37] "[35m[1mPOST /api/college/register HTTP/1.1[0m" 201 -
+2025-02-04 19:59:48,843 - INFO - 127.0.0.1 - - [04/Feb/2025 19:59:48] "GET /admin HTTP/1.1" 200 -
+2025-02-04 19:59:53,503 - INFO - 127.0.0.1 - - [04/Feb/2025 19:59:53] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 19:59:53,576 - INFO - 127.0.0.1 - - [04/Feb/2025 19:59:53] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:00:09,554 - INFO - College Rejected: 67a2245175cb359030e33aa7
+2025-02-04 20:00:09,555 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:09] "PUT /api/college/reject/67a2245175cb359030e33aa7 HTTP/1.1" 200 -
+2025-02-04 20:00:14,048 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:14] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:00:14,148 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:14] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:00:44,258 - INFO - College Approved: 67a2245175cb359030e33aa7
+2025-02-04 20:00:44,259 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:44] "PUT /api/college/approve/67a2245175cb359030e33aa7 HTTP/1.1" 200 -
+2025-02-04 20:00:48,788 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:48] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:00:48,861 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:48] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:01:57,930 - INFO - 127.0.0.1 - - [04/Feb/2025 20:01:57] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:01:59,018 - INFO - 127.0.0.1 - - [04/Feb/2025 20:01:59] "GET /admin/dashboard/stats HTTP/1.1" 200 -
