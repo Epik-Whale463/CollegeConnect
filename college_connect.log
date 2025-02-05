@@ -23,3 +23,191 @@
 2025-02-04 20:00:48,861 - INFO - 127.0.0.1 - - [04/Feb/2025 20:00:48] "GET /admin/dashboard/stats HTTP/1.1" 200 -
 2025-02-04 20:01:57,930 - INFO - 127.0.0.1 - - [04/Feb/2025 20:01:57] "GET /api/college/list HTTP/1.1" 200 -
 2025-02-04 20:01:59,018 - INFO - 127.0.0.1 - - [04/Feb/2025 20:01:59] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:18:35,782 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 20:18:35,783 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 20:18:35,784 - INFO -  * Restarting with stat
+2025-02-04 20:18:36,085 - WARNING -  * Debugger is active!
+2025-02-04 20:18:36,085 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 20:19:16,319 - INFO - College Rejected: 67a2245175cb359030e33aa7
+2025-02-04 20:19:16,319 - INFO - 127.0.0.1 - - [04/Feb/2025 20:19:16] "PUT /api/college/reject/67a2245175cb359030e33aa7 HTTP/1.1" 200 -
+2025-02-04 20:19:21,179 - INFO - 127.0.0.1 - - [04/Feb/2025 20:19:21] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:19:21,266 - INFO - 127.0.0.1 - - [04/Feb/2025 20:19:21] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:19:53,410 - INFO - 127.0.0.1 - - [04/Feb/2025 20:19:53] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:19:53,509 - INFO - 127.0.0.1 - - [04/Feb/2025 20:19:53] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:21:53,732 - INFO - 127.0.0.1 - - [04/Feb/2025 20:21:53] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:21:53,825 - INFO - 127.0.0.1 - - [04/Feb/2025 20:21:53] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:23:54,059 - INFO - 127.0.0.1 - - [04/Feb/2025 20:23:54] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:23:54,227 - INFO - 127.0.0.1 - - [04/Feb/2025 20:23:54] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:25:53,689 - INFO - 127.0.0.1 - - [04/Feb/2025 20:25:53] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:25:53,833 - INFO - 127.0.0.1 - - [04/Feb/2025 20:25:53] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:27:53,691 - INFO - 127.0.0.1 - - [04/Feb/2025 20:27:53] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:27:53,793 - INFO - 127.0.0.1 - - [04/Feb/2025 20:27:53] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:30:54,389 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 20:30:54,389 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 20:30:54,390 - INFO -  * Restarting with stat
+2025-02-04 20:30:54,693 - WARNING -  * Debugger is active!
+2025-02-04 20:30:54,695 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 20:30:55,837 - INFO - 127.0.0.1 - - [04/Feb/2025 20:30:55] "GET /admin HTTP/1.1" 200 -
+2025-02-04 20:30:55,953 - INFO - 127.0.0.1 - - [04/Feb/2025 20:30:55] "GET /admin HTTP/1.1" 200 -
+2025-02-04 20:31:01,259 - INFO - 127.0.0.1 - - [04/Feb/2025 20:31:01] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:31:01,275 - INFO - 127.0.0.1 - - [04/Feb/2025 20:31:01] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:31:01,351 - INFO - 127.0.0.1 - - [04/Feb/2025 20:31:01] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:31:01,382 - INFO - 127.0.0.1 - - [04/Feb/2025 20:31:01] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:31:55,845 - INFO - 127.0.0.1 - - [04/Feb/2025 20:31:55] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:32:19,166 - INFO - 127.0.0.1 - - [04/Feb/2025 20:32:19] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:32:34,503 - INFO - 127.0.0.1 - - [04/Feb/2025 20:32:34] "GET / HTTP/1.1" 200 -
+2025-02-04 20:32:36,344 - INFO - 127.0.0.1 - - [04/Feb/2025 20:32:36] "GET / HTTP/1.1" 200 -
+2025-02-04 20:32:37,479 - INFO - 127.0.0.1 - - [04/Feb/2025 20:32:37] "GET /admin HTTP/1.1" 200 -
+2025-02-04 20:32:42,017 - INFO - 127.0.0.1 - - [04/Feb/2025 20:32:42] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:32:42,114 - INFO - 127.0.0.1 - - [04/Feb/2025 20:32:42] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:33:02,991 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:02] "GET / HTTP/1.1" 200 -
+2025-02-04 20:33:03,810 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:03] "GET /admin HTTP/1.1" 200 -
+2025-02-04 20:33:08,322 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:08] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:33:08,407 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:08] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:35:08,904 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:08] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:35:09,006 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:09] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:37:08,655 - INFO - 127.0.0.1 - - [04/Feb/2025 20:37:08] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:37:08,723 - INFO - 127.0.0.1 - - [04/Feb/2025 20:37:08] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:44:38,114 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 20:44:38,114 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 20:44:38,114 - INFO -  * Restarting with stat
+2025-02-04 20:44:43,193 - WARNING -  * Debugger is active!
+2025-02-04 20:44:43,193 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 20:44:44,412 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:44] "GET / HTTP/1.1" 200 -
+2025-02-04 20:45:11,195 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:11] "[33mGET /register_student HTTP/1.1[0m" 404 -
+2025-02-04 20:47:37,775 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:37] "GET /admin HTTP/1.1" 200 -
+2025-02-04 20:47:39,980 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:39] "[33mGET /register_student HTTP/1.1[0m" 404 -
+2025-02-04 20:47:42,622 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:42] "GET /api/college/list HTTP/1.1" 200 -
+2025-02-04 20:47:42,685 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:42] "GET /admin/dashboard/stats HTTP/1.1" 200 -
+2025-02-04 20:47:42,903 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:42] "GET / HTTP/1.1" 200 -
+2025-02-04 20:47:43,476 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:43] "GET / HTTP/1.1" 200 -
+2025-02-04 20:47:44,202 - INFO - 127.0.0.1 - - [04/Feb/2025 20:47:44] "[33mGET /register_student HTTP/1.1[0m" 404 -
+2025-02-04 20:48:41,624 - INFO -  * Detected change in 'C:\\Users\\pvrch\\OneDrive\\Projects\\College_connect\\main.py', reloading
+2025-02-04 20:48:42,307 - INFO -  * Restarting with stat
+2025-02-04 20:48:47,674 - WARNING -  * Debugger is active!
+2025-02-04 20:48:47,675 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 20:48:47,717 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:47] "GET / HTTP/1.1" 200 -
+2025-02-04 20:48:48,619 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:48] "GET / HTTP/1.1" 200 -
+2025-02-04 20:48:49,892 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:49] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:48:53,220 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:53] "GET /register_college HTTP/1.1" 200 -
+2025-02-04 20:48:55,368 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:55] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-02-04 20:48:55,580 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:55] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-04 20:48:55,591 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:55] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-04 20:48:55,634 - INFO - 127.0.0.1 - - [04/Feb/2025 20:48:55] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=nlXBAtxHVRd2d36R3a2Z HTTP/1.1" 200 -
+2025-02-04 20:49:26,266 - INFO -  * Detected change in 'C:\\Users\\pvrch\\OneDrive\\Projects\\College_connect\\main.py', reloading
+2025-02-04 20:49:26,706 - INFO -  * Restarting with stat
+2025-02-04 20:49:31,808 - WARNING -  * Debugger is active!
+2025-02-04 20:49:31,811 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 20:49:49,012 - INFO - 127.0.0.1 - - [04/Feb/2025 20:49:49] "GET / HTTP/1.1" 200 -
+2025-02-04 20:49:49,896 - INFO - 127.0.0.1 - - [04/Feb/2025 20:49:49] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:50:05,838 - INFO - 127.0.0.1 - - [04/Feb/2025 20:50:05] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-02-04 20:50:17,968 - INFO - 127.0.0.1 - - [04/Feb/2025 20:50:17] "GET / HTTP/1.1" 200 -
+2025-02-04 20:50:18,693 - INFO - 127.0.0.1 - - [04/Feb/2025 20:50:18] "GET /login HTTP/1.1" 200 -
+2025-02-04 20:51:05,432 - INFO - 127.0.0.1 - - [04/Feb/2025 20:51:05] "GET /login HTTP/1.1" 200 -
+2025-02-04 20:52:08,675 - INFO - 127.0.0.1 - - [04/Feb/2025 20:52:08] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:53:23,320 - INFO - 127.0.0.1 - - [04/Feb/2025 20:53:23] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-02-04 20:53:39,213 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 20:53:39,213 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 20:53:39,214 - INFO -  * Restarting with stat
+2025-02-04 20:53:44,325 - WARNING -  * Debugger is active!
+2025-02-04 20:53:44,325 - INFO -  * Debugger PIN: 442-460-021
+2025-02-04 20:53:45,295 - INFO - 127.0.0.1 - - [04/Feb/2025 20:53:45] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:53:46,802 - INFO - 127.0.0.1 - - [04/Feb/2025 20:53:46] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:53:47,027 - INFO - 127.0.0.1 - - [04/Feb/2025 20:53:47] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:53:47,172 - INFO - 127.0.0.1 - - [04/Feb/2025 20:53:47] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:53:54,903 - INFO - 127.0.0.1 - - [04/Feb/2025 20:53:54] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-02-04 20:57:46,993 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:46] "GET /register_student HTTP/1.1" 200 -
+2025-02-04 20:57:54,520 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:54] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-02-04 20:58:14,106 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:14] "GET / HTTP/1.1" 200 -
+2025-02-04 20:58:14,683 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:14] "GET /login HTTP/1.1" 200 -
+2025-02-04 20:58:25,577 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:25] "POST /api/auth/login HTTP/1.1" 200 -
+2025-02-04 20:58:27,095 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:27] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2025-02-04 20:59:08,006 - INFO - 127.0.0.1 - - [04/Feb/2025 20:59:08] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2025-02-04 20:59:48,516 - INFO - 127.0.0.1 - - [04/Feb/2025 20:59:48] "GET / HTTP/1.1" 200 -
+2025-02-04 20:59:49,910 - INFO - 127.0.0.1 - - [04/Feb/2025 20:59:49] "GET /login HTTP/1.1" 200 -
+2025-02-04 20:59:58,763 - INFO - 127.0.0.1 - - [04/Feb/2025 20:59:58] "POST /api/auth/login HTTP/1.1" 200 -
+2025-02-04 21:00:00,695 - INFO - 127.0.0.1 - - [04/Feb/2025 21:00:00] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2025-02-05 21:15:00,937 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 21:15:00,937 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-05 21:15:00,937 - INFO -  * Restarting with stat
+2025-02-05 21:15:06,171 - WARNING -  * Debugger is active!
+2025-02-05 21:15:06,175 - INFO -  * Debugger PIN: 127-758-529
+2025-02-05 21:15:15,052 - INFO - 127.0.0.1 - - [05/Feb/2025 21:15:15] "GET / HTTP/1.1" 200 -
+2025-02-05 21:15:15,153 - INFO - 127.0.0.1 - - [05/Feb/2025 21:15:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-05 21:15:16,623 - INFO - 127.0.0.1 - - [05/Feb/2025 21:15:16] "GET / HTTP/1.1" 200 -
+2025-02-05 21:15:25,410 - INFO - 127.0.0.1 - - [05/Feb/2025 21:15:25] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:18:19,458 - INFO - 127.0.0.1 - - [05/Feb/2025 21:18:19] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:18:27,953 - INFO - 127.0.0.1 - - [05/Feb/2025 21:18:27] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:19:38,465 - INFO - 127.0.0.1 - - [05/Feb/2025 21:19:38] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:19:40,886 - INFO - 127.0.0.1 - - [05/Feb/2025 21:19:40] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:19:43,388 - INFO - 127.0.0.1 - - [05/Feb/2025 21:19:43] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:09,787 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:09] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:17,582 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:17] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:20,700 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:20] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:30,502 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:30] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:34,293 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:34] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:38,528 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:38] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:44,487 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:44] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:49,724 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:49] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:56,231 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:56] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:21:57,062 - INFO - 127.0.0.1 - - [05/Feb/2025 21:21:57] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:22:16,785 - INFO - 127.0.0.1 - - [05/Feb/2025 21:22:16] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:22:19,921 - INFO - 127.0.0.1 - - [05/Feb/2025 21:22:19] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:22:26,349 - INFO - 127.0.0.1 - - [05/Feb/2025 21:22:26] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:22:49,159 - INFO - 127.0.0.1 - - [05/Feb/2025 21:22:49] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:22:54,819 - INFO - 127.0.0.1 - - [05/Feb/2025 21:22:54] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:23:06,561 - INFO - 127.0.0.1 - - [05/Feb/2025 21:23:06] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:23:09,327 - INFO - 127.0.0.1 - - [05/Feb/2025 21:23:09] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:23:46,333 - INFO - 127.0.0.1 - - [05/Feb/2025 21:23:46] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:24:25,175 - INFO - 127.0.0.1 - - [05/Feb/2025 21:24:25] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:24:29,829 - INFO - 127.0.0.1 - - [05/Feb/2025 21:24:29] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:24:35,588 - INFO - 127.0.0.1 - - [05/Feb/2025 21:24:35] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:25:52,672 - INFO - 127.0.0.1 - - [05/Feb/2025 21:25:52] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:26:32,260 - INFO - 127.0.0.1 - - [05/Feb/2025 21:26:32] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:26:34,804 - INFO - 127.0.0.1 - - [05/Feb/2025 21:26:34] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:26:35,042 - INFO - 127.0.0.1 - - [05/Feb/2025 21:26:35] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:16,802 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:16] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:28,254 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:28] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:31,152 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:31] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:35,807 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:35] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:40,268 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:40] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:42,244 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:42] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:44,459 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:44] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:32:47,876 - INFO - 127.0.0.1 - - [05/Feb/2025 21:32:47] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:09,390 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:09] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:10,574 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:10] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:18,152 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:18] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:21,406 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:21] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:26,649 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:26] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:28,801 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:28] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:33:31,447 - INFO - 127.0.0.1 - - [05/Feb/2025 21:33:31] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:35:06,990 - INFO - 127.0.0.1 - - [05/Feb/2025 21:35:06] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:35:21,091 - INFO - 127.0.0.1 - - [05/Feb/2025 21:35:21] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:35:21,588 - INFO - 127.0.0.1 - - [05/Feb/2025 21:35:21] "GET /register_student HTTP/1.1" 200 -
+2025-02-05 21:35:29,319 - INFO - 127.0.0.1 - - [05/Feb/2025 21:35:29] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-02-05 21:35:36,267 - INFO - New user registered: 22bq1a42c2@vvit.net
+2025-02-05 21:35:36,267 - INFO - 127.0.0.1 - - [05/Feb/2025 21:35:36] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-02-05 21:35:37,911 - INFO - 127.0.0.1 - - [05/Feb/2025 21:35:37] "GET /login HTTP/1.1" 200 -
+2025-02-05 21:36:11,966 - INFO - 127.0.0.1 - - [05/Feb/2025 21:36:11] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-02-05 21:36:13,026 - INFO - 127.0.0.1 - - [05/Feb/2025 21:36:13] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-02-05 21:37:18,372 - INFO -  * Detected change in 'C:\\Users\\pvrch\\OneDrive\\Projects\\College_connect\\main.py', reloading
+2025-02-05 21:37:18,830 - INFO -  * Restarting with stat
+2025-02-05 21:37:25,242 - WARNING -  * Debugger is active!
+2025-02-05 21:37:25,244 - INFO -  * Debugger PIN: 127-758-529
+2025-02-05 21:37:25,302 - INFO - 127.0.0.1 - - [05/Feb/2025 21:37:25] "GET /login HTTP/1.1" 200 -
+2025-02-05 21:37:33,719 - INFO - 127.0.0.1 - - [05/Feb/2025 21:37:33] "POST /api/auth/login HTTP/1.1" 200 -
+2025-02-05 21:37:35,925 - INFO - 127.0.0.1 - - [05/Feb/2025 21:37:35] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2025-02-05 21:38:24,240 - INFO -  * Detected change in 'C:\\Users\\pvrch\\OneDrive\\Projects\\College_connect\\main.py', reloading
+2025-02-05 21:38:24,830 - INFO -  * Restarting with stat
+2025-02-05 21:38:30,253 - WARNING -  * Debugger is active!
+2025-02-05 21:38:30,253 - INFO -  * Debugger PIN: 127-758-529
+2025-02-05 21:43:33,396 - INFO -  * Detected change in 'C:\\Users\\pvrch\\OneDrive\\Projects\\College_connect\\main.py', reloading
+2025-02-05 21:43:34,069 - INFO -  * Restarting with stat
+2025-02-05 21:43:39,391 - WARNING -  * Debugger is active!
+2025-02-05 21:43:39,391 - INFO -  * Debugger PIN: 127-758-529
+2025-02-05 21:53:19,550 - INFO - 127.0.0.1 - - [05/Feb/2025 21:53:19] "[35m[1mPOST /api/auth/login HTTP/1.1[0m" 500 -

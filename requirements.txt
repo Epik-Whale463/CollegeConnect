@@ -4,3 +4,4 @@ pytz
 Flask-Bcrypt
 bson
 validators
+pyjwt

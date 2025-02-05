@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - College Connect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .github-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+        }
+        .github-input {
+            background-color: #0d1117;
+            border-color: #30363d;
+            color: #c9d1d9;
+        }
+        .github-input:focus {
+            border-color: #58a6ff;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-md mx-auto github-card rounded-lg shadow-xl p-8">
+            <div class="text-center mb-6">
+                <h1 class="text-3xl font-bold text-white mb-2">
+                    <i class="fas fa-sign-in-alt mr-2 text-blue-400"></i>Login
+                </h1>
+                <p class="text-gray-400">Access your College Connect account</p>
+            </div>
+
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label class="block mb-2 text-sm font-bold">Email</label>
+                    <input type="email" name="email" required class="github-input w-full px-3 py-2 rounded border text-white" placeholder="e.g., yourname@college.edu">
+                </div>
+                
+                <div>
+                    <label class="block mb-2 text-sm font-bold">Password</label>
+                    <input type="password" name="password" required class="github-input w-full px-3 py-2 rounded border text-white" placeholder="Enter your password">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                    <i class="fas fa-sign-in-alt mr-2"></i>Login
+                </button>
+            </form>
+            
+            <div id="loginStatus" class="mt-4 text-center"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const statusDiv = document.getElementById('loginStatus');
+            
+            const formData = {
+                email: form.email.value,
+                password: form.password.value
+            };
+
+            statusDiv.innerHTML = `<span class="text-yellow-400"><i class="fas fa-spinner fa-spin mr-2"></i>Logging in...</span>`;
+
+            try {
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+
+                if (response.ok) {
+                    statusDiv.innerHTML = `<span class="text-green-400"><i class="fas fa-check-circle mr-2"></i>Login successful!</span>`;
+                    setTimeout(() => window.location.href = '/dashboard', 1500);
+                } else {
+                    statusDiv.innerHTML = `<span class="text-red-400"><i class="fas fa-times-circle mr-2"></i>${result.error}</span>`;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `<span class="text-red-400"><i class="fas fa-exclamation-triangle mr-2"></i>Network error. Please try again.</span>`;
+            }
+        });
+    </script>
+</body>
+</html>
